@@ -1,0 +1,17 @@
+{
+    "cardano": {
+        "ninja": {
+            "alerts":
+                {
+                "schema": {},
+                "data": [
+                    {
+                        "date": "10DEC2023",
+                        "description": "Look out for a Berry Pool fake website that will trick you into sending all your assets to the creator of the fake website.",
+                        "status": "active"
+                    }
+                ]
+                }
+        }
+    }
+}

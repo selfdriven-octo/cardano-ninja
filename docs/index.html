@@ -1,0 +1,376 @@
+<!--
+-->
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="shortcut icon" href="/images/cardano.png">
+    <link rel="apple-touch-icon" href="/images/cardano.png" />
+
+    <link rel="stylesheet" href="/css/landkit.libs.bundle.css" />
+    <link rel="stylesheet" href="/css/landkit.theme.bundle.css" />
+    <link rel="stylesheet" href="/css/2182.style-2.0.0.css" />
+    <link rel="stylesheet" href="/css/entityos.util-4.4.17.css" />
+
+    <title>Cardano Ninja</title>
+</head>
+
+<body style="padding-left:30px; padding-right: 30px;">
+    <div class="pt-5">
+        <a style="margin-left: 10px; font-family:system-ui !important; color:#ff943d !important; font-size:1.6rem; text-align:left;"
+            href="/">
+            <img class="img-responsive" src="/images/cardano-logo.png" style="width:140px;"></a>
+
+        <div class="pt-0 fw-bold" style="margin-left: 12px; color:#1133AD; font-size:4.4rem; line-height:0.8;">
+            Ninja
+        </div>
+
+        <div class="pt-6 fw-bold text-secondary" style="margin-left: 12px; font-size:2rem; line-height:1;">
+            Helping to keep the Cardano community safe.
+        </div>
+
+        <div class="mt-6">
+            <div style="max-width: 1200px;">
+                <div class="card shadow-lg">
+                    <div class="card-header pb-3 pt-4">
+                        <div class="row">
+                            <div class="col">
+                                <h1 class="text-danger mb-0 mt-1 mt-md-0"><i class="fe fe-alert-triangle"></i> Alerts
+                                </h1>
+                            </div>
+                            <div class="col-auto text-right mt-2 mt-md-0" style="padding-left:16px !important;">
+                                <a class="btn btn-sm btn-outline-danger rounded-pill me-2" data-toggle="collapse"
+                                    href="#blacklists">
+                                    Blacklists <i class="fe fe-chevron-down"></i>
+                                </a>
+                                <a class="btn btn-sm btn-outline-white rounded-pill text-secondary"
+                                    data-toggle="collapse" href="#report-alert">
+                                    Report <i class="fe fe-chevron-down"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body pt-5 pb-4 collapse border-bottom" id="report-alert">
+                        <ul>
+                            <li>A full report system is coming.</li>
+                            <li class="mt-2">
+                                <a href="https://github.com/adabox-aio/cardano-shield/tree/main/config"
+                                    target="_blank">CardanoShield are maintaining blacklists <i
+                                        class="fe fe-external-link"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body pt-5 pb-4 collapse border-bottom entityos-collapse" id="blacklists"
+                        data-controller="cardano-ninja-blacklists">
+                        <div id="cardano-ninja-blacklists-view"></div>
+
+                    </div>
+                    <div class="card-body pt-5 pb-4" id="cardano-ninja-alert-view">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-6">
+            <div style="max-width: 1200px;">
+                <div class="card shadow-lg">
+                    <div class="card-header pb-3 pt-4">
+                        <h1 class="text-success mb-0"><i class="fe fe-user"></i> Protect Yourself</h1>
+                    </div>
+                    <div class="card-body pt-5 pb-4" id="cardano-wallets-alert-view">
+                        <ol>
+                            <li>
+                                <div class="fw-bold">Always make sure that the wallet you are installing is legitimate.
+                                </div>
+                                <div class="text-secondary">i.e. from one of the
+                                    links in the wallets listed at <a class="text-secondary"
+                                        href="https://cardanowallets.io" target="_blank">cardanowallets.io</a>.</div>
+                                <div class="text-secondary">Don't trust a link that has been sent to you!</div>
+                            </li>
+
+                            <li class="mt-2">
+                                <div class="fw-bold">Generally, "Air Drop Websites" are a scam.</div>
+                                <div class="text-secondary fw-bold">Apply the rule: if it's too good
+                                    to be true, it probably isn't!!</div>
+                            </li>
+
+                            <li class="mt-2">
+                                <div class="fw-bold">Watch out for "Airdrop Tokens / Reward Tokens" that are sent to
+                                    your wallet.</div>
+                                <div class="text-secondary">The URL link in the token will lead you to a website
+                                    that will send many tokens from your wallet to the creator of the scam website when
+                                    you sign the transaction.</div>
+
+                                <div class="text-secondary mt-2">
+                                    You can go to <a class="text-secondary" href="https://pool.pm/"
+                                        target="_blank">pool.pm</a> and enter the assetname and see if they have marked
+                                    it as "SCAM".
+                                    e.g. <a class="text-secondary"
+                                        href="https://pool.pm/asset18vykxgx7yk5usjpwhegqlp9zjda92wcr93rhnl"
+                                        target="_blank">https://pool.pm/asset18vykxgx7yk5usjpwhegqlp9zjda92wcr93rhnl</a>.
+                                </div>
+                                <div class="text-secondary">Noting that even if it is not marked as "SCAM", does
+                                    not mean it is not a scam.
+                                </div>
+
+                                <div class="text-secondary mt-2">
+                                    Also checkout the blacklist of SCAM Tokens, Policy IDs, Websites etc listed under
+                                    "Blacklists" above.
+                                    <a href="https://github.com/adabox-aio/cardano-shield/tree/main/config"
+                                        target="_blank" class="text-muted">Blacklists data by CardanoShield <i
+                                            class="fe fe-external-link"></i></a>
+                                </div>
+
+                                <div class="text-secondary mt-2">
+                                    You can also find a projects website URL at
+                                    <a href="https://cardanocube.io"
+                                        target="_blank" class="text-secondary">CardanoCube.io <i
+                                            class="fe fe-external-link"></i></a>
+                                </div>        
+                            </li>
+
+                            <li class="mt-2">
+                                <div class="fw-bold">Look out for deep-fake GenerativeAI based Videos!</div>
+                                <div class="text-secondary">Again, apply the rule: if it's too good
+                                    to be true, it probably isn't!</div>
+                            </li>
+
+                            <li class="mt-2">
+                                <div class="fw-bold">Look out for social media impersonation.</div>
+                                <div class="text-secondary">Check the date when the account was created, the
+                                    number of followers and look closely at the handle, they will typically change one
+                                    character.</div>
+                            </li>
+
+                            <li class="mt-2">
+                                <div class="fw-bold">Be very careful who you trust.</div>
+                                <div class="text-secondary">Always independently verify who they say they are.
+                                </div>
+                                <div class="text-secondary">Never share your wallets seed-phrase with anyone!
+                                </div>
+                            </li>
+
+                            <li class="mt-2">
+                                <div class="fw-bold">Check the transaction you are sending from your wallet before
+                                    sending/signing the
+                                    transaction!</div>
+                            </li>
+
+                            <li class="mt-2">
+                                <div class="fw-bold">Consider creating a wallet that you use as your transactional (hot)
+                                    wallet.</div>
+                                <div class="text-secondary">i.e. have a main (cold) wallet and then send only the
+                                    assets you plan to use with the website/app to the transactional (hot) wallet. Once
+                                    you've finished interacting with the website/app using your transactional (hot)
+                                    wallet, send assets back to your main (cold) wallet.</div>
+                            </li>
+                            <li class="mt-2">
+                                <div class="fw-bold">On social networks block the term "Airdrop".</div>
+                                <div class="text-secondary">i.e. if using X set up a "Muted words"</div>
+                            </li>
+                            <li class="mt-2">
+                                <div class="fw-bold">Check the projects website link using <a
+                                        href="https://cardanocube.io" target="_blank">CardanoCube (cardanocube.io) <i
+                                            class="fe fe-external-link"></i></a></div>
+                            </li>
+                            <li class="mt-2">
+                                <div class="fw-bold">Look out for job offers where they ask you to download and run a
+                                    file - no matter how good the website looks.</div>
+                            </li>    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-6">
+            <div style="max-width: 1200px;">
+                <div class="card shadow-lg">
+                    <div class="card-header pb-3 pt-4">
+                        <div class="row">
+                            <div class="col">
+                                <h1 class="text-info mb-0 mt-1 mt-md-0"><i class="fe fe-users"></i> Community
+                                </h1>
+                            </div>
+                            <div class="col-auto text-right">
+								  <a class="btn btn-sm btn-outline-info rounded-pill me-2"
+                                    href="https://cardanowallets.io" target="_blank">
+                                    Wallets <i class="fe fe-external-link"></i>
+                                </a>
+                                <a class="btn btn-sm btn-outline-secondary rounded-pill" data-toggle="collapse"
+                                    href="#community-suggest">
+                                    Suggest
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body pt-5 pb-4 collapse border-bottom" id="community-suggest">
+                        <ul>
+                            <li>A full suggestion system is coming.</li>
+                            <li class="mt-2">
+                                <div>If you have some content that you think we should share please message <a
+                                        href="https://x.com/selfdrivenOcto" target="_blank">selfdrivenOcto</a> at X.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body pt-5 pb-4" id="ninja-community-view">
+                        <ul>
+							<li class="mt-2">
+                                <div>
+                                    <a class="fw-bold" target="_blank" href="https://youtu.be/1mrub-bFFVQ">
+                                       Law Enforcement Dealing with Fraud & Crypto Education <i class="fe fe-external-link"></i></a>
+                                </div>
+                                <div class="small text-secondary">Video by dApp Central</div>
+                            </li>
+							  <li class="mt-2">
+                                <div>
+                                    <a class="fw-bold" target="_blank" href="https://www.youtube.com/watch?v=5vtRgvPlQUQ">
+                                       Eternl Guard <i class="fe fe-external-link"></i></a>
+                                </div>
+                                <div class="small text-secondary">Video by Nova</div>
+                            </li>	
+                            <li class="mt-2">
+                                <div>
+                                    <a class="fw-bold" target="_blank" href="https://www.youtube.com/j8cE8Dt0N_8">
+                                       Please Don't Fall For This Scam!! <i class="fe fe-external-link"></i></a>
+                                </div>
+                                <div class="small text-secondary">Video by dApp Central</div>
+                            </li>
+
+                            <li class="mt-2">
+                                <div>
+                                    <a class="fw-bold" target="_blank" href="https://youtu.be/vYdIvmlzZOQ">
+                                        CardanoShield Interview <i class="fe fe-external-link"></i></a>
+                                </div>
+                                <div class="small text-secondary">Video by dApp Central</div>
+                            </li>
+                            <li class="mt-2">
+                                <div>
+                                    <a class="fw-bold" target="_blank" href="https://youtu.be/IXaaa_6Iadg">Protect
+                                        Yourself From Scams! <i class="fe fe-external-link"></i></a>
+                                </div>
+                                <div class="small text-secondary">Video by Learn Cardano</div>
+                            </li>
+
+                            <li class="mt-2">
+                                <div>
+                                    <a class="fw-bold" target="_blank" href="https://dyortool.io/">DYORTOOL.io <i class="fe fe-external-link"></i></a>
+                                </div>
+                                <div class="small text-secondary">A tool for evaluating dapps, tokens, NFT's and blockchain projects by SCATDAO.</div>
+                            </li>
+
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="mt-6 mb-6">
+            <div style="max-width: 1200px;">
+                <div class="card shadow-lg">
+                    <div class="card-body p-5 px-7">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="mt-md-1 fw-bold lead" style="font-family: system-ui !important;">
+                                    A Cardano Community Project<br />Supported by <a href="https://selfdriven.foundation/about/octo"
+                                        target="_blank">selfdrivenOcto</a> & <a href="https://dsociety.io"
+                                        target="_blank">Turlia</a>.
+                                </div>
+                                <div class="mt-md-2 fw-bold lead" style="font-family: system-ui !important;">
+									<a href="https://selfdriven.foundation" target="_blank"
+										class="text-decoration-none">
+										<img style="width: 140px !important"
+											src="/images/selfdriven-2-logo-words-orange-transparent-header.png"
+											class="img-responsive mx-auto mb-4 w-50 w-md-25">
+									</a>
+								</div>
+                                <ul>
+                                    <li class="mt-2 pr-md-4 text-secondary" style="font-family: system-ui !important;">
+                                        Version 1.0.0
+                                    </li>
+                                    <li class="mt-2 pr-md-4 text-secondary" style="font-family: system-ui !important;">
+                                        This site is a work in progress with much more functionality to come. Next item
+                                        is a RSS feed.
+                                    </li>
+                                    <li class="mt-2 text-secondary" style="font-family: system-ui !important;">
+                                        We are working on the design for a full creative update for the website.
+                                    </li>
+                                    <li class="mt-2 pr-md-4 text-secondary" style="font-family: system-ui !important;">
+                                        For now, please send all feedback to <a href="https://x.com/selfdrivenOcto"
+                                            target="_blank" class="text-secondary">selfdrivenOcto</a> on X.
+                                    </li>
+                                    <li class="mt-2 text-secondary" style="font-family: system-ui !important;">
+                                        <a href="https://github.com/selfdriven-foundation/about/tree/main/community-projects-we-support/cardano-ninja/data/"
+                                            class="text-secondary" target="_blank">
+                                            Cardano Ninja Alert Data (JSON) <i class="fe fe-github"></i> [Shared as CC0]
+                                    </li>
+                                    <li class="mt-2 text-secondary" style="font-family: system-ui !important;">
+                                        We are also working on <a href="https://cardanowallets.io" target="_blank"
+                                            class="text-secondary">cardanowallets.io</a>.
+                                    </li>
+                                    <li class="mt-2 text-secondary" style="font-family: system-ui !important;">
+                                        <div>Blacklists provided by <a href="https://www.cardanoshield.com" target="_blank"
+                                                class="text-secondary">CardanoShield</a> & the Cardano Community.</div>
+
+                                        <div class="mt-1 text-muted" style="font-family: system-ui !important;"><a
+                                                href="https://github.com/adabox-aio/cardano-shield/tree/main/config"
+                                                target="_blank" class="text-muted">Data Repository <i class="fe fe-external-link"></i></a>
+                                        </div>
+                                    </li>
+
+                                    <li class="mt-3 pt-3 text-muted border-top"
+                                        style="font-family: system-ui !important;">
+                                        <a href="https://drep.tools" target="_blank"
+                                            class="text-muted">drep.tools <i class="fe fe-external-link"></i></a>
+                                    </li>
+
+                                    <li class="mt-2 text-muted" style="font-family: system-ui !important;">
+                                       <a href="https://cardano.build" target="_blank"
+                                            class="text-muted">cardano.build <i
+                                                class="fe fe-external-link"></i></a>
+                                    </li>
+                                </ul>
+								<div class="py-4 lead fw-bold">
+									<div class="text-left"><a
+											href="https://handle.me/cardano.ninja" target="_blank" class="btn btn-sm btn-outline-info rounded-pill">Support this project with a donation <i class="fe fe-external-link"></i></a></div>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<!-- Vendor JS -->
+<script src="/js/landkit.vendor.bundle.js"></script>
+
+<!-- Theme JS -->
+<script src="/js/landkit.theme.bundle.js"></script>
+
+<script src="/js/jquery-3.2.1.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/lodash.min.js"></script>
+<script src="/js/moment.min.js"></script>
+<script src="/js/numeral.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/cbor.js"></script>
+<script src="/js/underscore.string.min.js"></script>
+
+<script src="/js/entityos-3.9.6.js"></script>
+<script src="/js/entityos.util-5.0.9.js"></script>
+<script src="/js/entityos.util.protect-1.0.5.js"></script>
+
+<script src="/js/typhonjs.min.js"></script>
+<script src="/js/2183.cardano.ninja-2.0.7.js"></script>
+
+</html>
